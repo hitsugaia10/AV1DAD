@@ -30,6 +30,12 @@ export default function Detail (){
         
     }
 
+    function goToInstagram(){
+        Linking.openURL(`instagram://user?username=${incident.instagram}`);
+        
+    }
+
+
     return(
         <View style={styles.container}>
             <View style={styles.header}>
@@ -62,6 +68,10 @@ export default function Detail (){
 
                 <TouchableOpacity style={styles.action} onPress={sendEmail}>
                 <Text style={styles.actionText}> Email: </Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.action} onPress={goToInstagram}>
+                <Text style={styles.actionText}> Instagram: </Text>
                 </TouchableOpacity>
             </View>
 

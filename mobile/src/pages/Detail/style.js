@@ -61,9 +61,11 @@ export default StyleSheet.create({
     },
 
     actions: {
-        justifyContent:  "space-between",
-        flexDirection: "row",
+        justifyContent:  "space-evenly",
+        flexDirection: "column",
         marginTop: 16,
+        alignItems: "center"
+        
         
     },
 
@@ -73,14 +75,17 @@ export default StyleSheet.create({
         height: 45,
         width: "48%",
         justifyContent: "center",
-        alignItems:  "center"
+        alignItems:  "center",
+        marginBottom: 6,
+       
         
     },
 
     actionText: {
         fontSize: 15,
         color: "#FFF",
-        fontWeight: "bold"
+        fontWeight: "bold",
+       
         
     },
 

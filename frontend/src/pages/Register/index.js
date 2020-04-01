@@ -13,6 +13,7 @@ export default function Register() {
     const [whatsapp, setWhatsApp] = useState("");
     const [city, setCity] = useState("");
     const [uf, setUf] = useState("");
+    const [instagram, setInstagram] = useState("");
 
     const history = useHistory();
 
@@ -25,6 +26,7 @@ export default function Register() {
             whatsapp,
             city,
             uf,
+            instagram
         };
         try {
             const response = await api.post("ongs", data);
@@ -60,6 +62,11 @@ export default function Register() {
                     <input placeholder="WhatsApp"
                         value={whatsapp}
                         onChange={e => setWhatsApp(e.target.value)}
+                    />
+
+                    <input placeholder="Instagram"
+                        value={instagram}
+                        onChange={e => setInstagram(e.target.value)}
                     />
 
                     <div className="input-group">
